@@ -45,6 +45,7 @@ class Planet:
     
     def getCircumference (self):
         c = 2 * (math.pi * self.radius)
+        return c
 
     #mutator Methods
 
