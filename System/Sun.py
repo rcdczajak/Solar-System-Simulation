@@ -1,18 +1,16 @@
 import math
 
-class Planet:
+class Sun:
 
-    def __init__ (self, iname, irad, im, idist, imoons):
+    def __init__ (self, iname, irad, im, itemp):
         self.name = iname
         self.radius = irad
         self.mass = im
-        self.distance = idist
-        self.numMoons = imoons
-        self.moonList = [ ]
+        self.temp = itemp
 
-    def __string__ (self):
+    def __str__ (self):
         return self.name
-
+    
     def getName (self):
         return self.name
     
@@ -25,11 +23,8 @@ class Planet:
     def getDistance (self):
         return self.distance
     
-    def getMoons (self):
-        return self.numMoons
-    
-    def getMoonList (self):
-        return self.moonList
+    def getTemp (self):
+        return self.temp
     
     def getVolume (self):
         v = 4.0/3 * math.pi * self.radius**3
@@ -51,8 +46,5 @@ class Planet:
     def setName (self, newName):
         self.name = newName
 
-    def setMoons (self, newMoons):
-        self.numMoons += newMoons
-
-    def addMoon (self, newMoonName):
-        self.moonList += newMoonName
+    def setRadius (self, newRad):
+        self.radius = newRad
