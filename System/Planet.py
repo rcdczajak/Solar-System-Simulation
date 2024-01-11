@@ -5,3 +5,17 @@ class Planet:
         self.radius = irad
         self.mass = im
         self.distance = idist
+
+    def getName (self):
+        return self.name
+    
+    def getRadius (self):
+        return self.radius
+    
+    def getMass (self):
+        return self.mass
+    
+    def getDistance (self):
+        return self.distance
+    
+    
